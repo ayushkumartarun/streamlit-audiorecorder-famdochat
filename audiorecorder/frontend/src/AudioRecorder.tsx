@@ -44,7 +44,7 @@ class AudioRecorder extends StreamlitComponentBase<State> {
           onClick={this.onClicked}
           disabled={this.props.disabled}
           className="btn btn-outline-secondary"
-          style={{marginBottom: "1px"}}
+          style={{marginBottom: "1px", position: "fixed", bottom: "3rem"}}
         >
           {this.state.recording ? recording_prompt : record_prompt}
         </button>
